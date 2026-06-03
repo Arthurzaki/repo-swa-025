@@ -1,20 +1,91 @@
-<!DOCTYPE html> 
-<html lang="id"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>Praktikum Azure Static Web Apps</title> 
-<style> 
-body { font-family: Arial; margin: 40px; background: #f4f6f8; } 
-.container { background: white; padding: 24px; border-radius: 12px; } 
-h1 { color: #1f4e79; } 
-</style> 
-</head> 
-<body> 
-<div class="container"> 
-<h1>Praktikum Azure Static Web Apps</h1> 
-<p>Halaman ini berhasil di-deploy menggunakan Azure Static Web Apps.</p> 
-<p>Layanan: Azure Static Web Apps</p> 
-<p>Deployment: GitHub Repository</p> 
-</div> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Project Azure Serverless</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 40px;
+      background: #f4f6f8;
+    }
+
+    .container {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #1f4e79;
+    }
+
+    code {
+      background: #eee;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .box {
+      background: #f0f7ff;
+      padding: 16px;
+      border-left: 4px solid #1f4e79;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Website Informasi Kegiatan Mahasiswa</h1>
+
+    <p>
+      Website ini digunakan untuk memberikan informasi kegiatan mahasiswa dan
+      mendokumentasikan API estimasi biaya konsumsi.
+    </p>
+
+    <h2>Identitas Praktikum</h2>
+    <p>Nama Mahasiswa: Muhammad Zaki Fathur Rahman</p>
+    <p>NIM: 0920240025</p>
+    <p>Mata Kuliah: Komputasi Awan</p>
+    <p>Topik: Azure Serverless</p>
+
+    <h2>Daftar Layanan Azure yang Digunakan</h2>
+    <ul>
+      <li>Azure Static Web Apps</li>
+      <li>Azure Functions</li>
+      <li>Azure App Service</li>
+      <li>Azure Container Apps</li>
+    </ul>
+
+    <h2>Ketentuan Harga Konsumsi</h2>
+    <ul>
+      <li>Snack: Rp15.000 per peserta</li>
+      <li>Makan: Rp30.000 per peserta</li>
+      <li>Lengkap: Rp45.000 per peserta</li>
+    </ul>
+
+    <div class="box">
+      <h2>Dokumentasi API Estimasi Biaya</h2>
+      <p>Format URL:</p>
+      <p><code>/api/EstimasiBiaya?jumlah=40&jenis=snack</code></p>
+
+      <p>Parameter:</p>
+      <ul>
+        <li><code>jumlah</code>: jumlah peserta</li>
+        <li><code>jenis</code>: snack, makan, atau lengkap</li>
+      </ul>
+
+      <p>Contoh response:</p>
+      <pre>{
+  "jumlah": 40,
+  "jenis": "snack",
+  "hargaPerPeserta": 15000,
+  "total": 600000,
+  "timestamp": "2026-05-06T10:00:00Z"
+}</pre>
+    </div>
+  </div>
+</body>
+</html>
